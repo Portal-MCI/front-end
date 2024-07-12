@@ -1,6 +1,4 @@
 <template>
-   
-
     <div 
     style="background-image: url('/fundo.png'); background-size: cover;" 
     class="h-screen w-100 d-flex justify-end align-center pa-3"
