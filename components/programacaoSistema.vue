@@ -27,9 +27,11 @@
               </v-col>
             </v-row>
           </div>
+
+          <programacao-programacaomobile class="d-lg-none"/>
             <!--Outra secção-->
-            <div style="position: relative; border: 1px solid #BDBDBD; height: 70vh;" class="rounded mx-auto mt-4 py-4 px-4">
-              <p style="position: absolute; top: -10px; left: 20px;" class="bg-white px-2 text-body-2">Inspeção Planejadas</p>
+            <div style="position: relative; border: 1px solid #BDBDBD; height: 70vh;" class="rounded mx-auto mt-4 py-4 px-4 d-none d-lg-block">
+              <p style="position: absolute; top: -10px; left: 20px;" class="bg-white px-2 text-body-2 ">Inspeção Planejadas</p>
               <!--SECÇÃO PLANEJAMENTO-->
               <div style="height: 100%; overflow-y: auto">
                 <div class="d-none d-lg-flex font-weight-bold mb-2" style="font-size: 10px;">
@@ -105,12 +107,15 @@
                   </div>
                 </div>
 
+
+
+                
                 <!--Card mobile-->
                 <v-card
                   v-for="(card, i) in cards"
                   :key="i"
                   elevation="1"
-                  class=" mb-2 border d-lg-none"
+                  class=" mb-2 border d-none"
                   flat
                 >
                 <v-card-item>
